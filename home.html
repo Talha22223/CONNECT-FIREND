@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Connect Friends - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#1d9bf0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="top-navbar">
+    <div class="navbar-brand">Connect Friends</div>
+    <div class="navbar-actions">
+      <button class="navbar-btn" title="Search">🔍</button>
+      <button class="navbar-btn" title="Notifications">🔔</button>
+      <button class="navbar-btn" title="Messages">✉️</button>
+      <button class="navbar-btn" title="Profile">👤</button>
+    </div>
+  </nav>
+
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="app-brand">
+        <h1 class="app-title">Connect Friends</h1>
+        <p class="app-subtitle">Share your world</p>
+      </div>
+      
+      <div class="nav-section">
+        <ul class="nav-icons">
+          <li class="active">
+            <span class="icon">🏠</span>
+            <span>Home</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">🔍</span>
+            <span>Explore</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">🔔</span>
+            <span>Notifications</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">✉️</span>
+            <span>Messages</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">🔖</span>
+            <span>Bookmarks</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">👤</span>
+            <span>Profile</span>
+            <div class="notification-dot"></div>
+          </li>
+          <li>
+            <span class="icon">⚙️</span>
+            <span>Settings</span>
+            <div class="notification-dot"></div>
+          </li>
+        </ul>
+        
+        <div class="profile-section">
+          <div class="profile-info">
+            <div class="profile-avatar">D</div>
+            <div class="profile-details">
+              <h4>Demo User</h4>
+              <p>@demo_user</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="trending-section">
+        <h2>Trending Now</h2>
+        <input type="text" id="trendSearch" class="search-input" placeholder="🔍 Search Trend Now">
+        <div id="trendList"></div>
+        <button id="loadMoreTrends" class="load-more-btn">Load more</button>
+      </div>
+    </aside>
+
+    <!-- Main Feed -->
+    <main class="feed">
+      <header class="feed-header">
+        <h1 class="feed-title">HomePage</h1>
+      </header>
+      
+      <div class="new-post">
+        <textarea class="new-post-input" placeholder="💭 What's happening?"></textarea>
+        <div class="new-post-actions">
+          <div class="new-post-icons">
+            <span title="Add photo">📷</span>
+            <span title="Add poll">📊</span>
+            <span title="Add emoji">😊</span>
+            <span title="Schedule">📅</span>
+          </div>
+          <button class="post-btn" disabled style="opacity: 0.5;">Post</button>
+        </div>
+      </div>
+      
+      <div id="postFeed"></div>
+    </main>
+
+    <!-- Messages -->
+    <aside class="messages">
+      <div class="messages-section">
+        <h2>Messages</h2>
+        <input type="text" id="messageSearch" class="search-input" placeholder="🔍 Search Messages">
+        <div id="messageList"></div>
+      </div>
+    </aside>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
